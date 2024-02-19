@@ -1,17 +1,16 @@
-import { useState } from 'react'
+import { useState } from "react";
+import RecipeItem from "./components/RecipeItem/RecipeItem";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-     <div>React+ReduxToolkit_step2</div>
-     <br />
-      
-
-
+      <div>React+ReduxToolkit_step2</div>
+      <br />
+      <RecipeItem recipe={{ id: 1, name: "Lasagna" }} />
+      <RecipeItem recipe={{ id: 2, name: "Poridge" }} />   
+      <RecipeItem recipe={{ id: 3, name: "Pasta" }} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
